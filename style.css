@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .logo{
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.container .title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* form */
+.container .content .input-box {
+    margin: 10px;
+  }
+  
+  .user-details.fullname,
+  .user-details.password {
+    display: flex;
+  }
+  
+  .user-details.fullname .input-box,
+  .user-details.password .input-box{
+    width: 50%;
+  }
+  
+  
+  .user-details.fullname .input-box:first-child,
+  .user-details.password .input-box:first-child{
+    margin-right: 5%;
+  }
+  
+  .input-box input[type="text"],
+  .input-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+  }
+
+  .input-box input[type="text"]:hover,
+  .input input[type="password"]:hover{
+      border-color: lightblue;
+  }
+  
+  .input-box input[type="text"]:focus,
+  .input input[type="password"]:focus {
+    border-color: #1598d4;
+  }
+
+  
+
+
+.space{
+    margin-left: 10%;
+}
+.agreement{
+    display: flex;
+
+}
+.checkbox{
+    margin:auto;
+    text-align: left;
+}
+
+.check-words{
+    width: 50%;
+    white-space: nowrap;
+}
+#hint{
+    background-color: lightskyblue;
+    color: white;
+    padding: 1px 5px;
+    border-radius:5px ;
+}
+.agree-words {
+    font-size: 15px;
+    width:80%;
+    margin-left:70px ;
+    padding-left:0 ;
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.register-button {
+    width: 50%;
+    background-color: rgb(0, 132, 255);
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.signin-button{
+    width: 50%;
+    font-size: 18px;
+    background-color: rgb(106, 201, 106);
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+  
+
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content{
+    flex-direction: column;
+  }
+}
